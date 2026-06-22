@@ -4,13 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Lamine — Private Chef & Catering</title>
+  <title>Lamine — Chef privé & Traiteur</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="header">
     <a href="#" class="brand">LAMINE</a>
+
+    <nav class="desktop-nav">
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
       <span></span>
@@ -19,203 +26,173 @@
   </header>
 
   <nav class="side-menu" id="sideMenu">
-    <a href="#about">ABOUT</a>
-    <a href="#services">SERVICES</a>
-    <a href="#experience">EXPERIENCE</a>
-    <a href="#gallery">GALLERY</a>
-    <a href="#contact" class="book-link">REQUEST</a>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#formats">Formats</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero">
-    <video
-      class="hero-video background-video"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="auto"
-      poster="assets/photos/photo1.jpg"
-    >
-      <source src="assets/videos/hero.mp4" type="video/mp4" />
-    </video>
+    <div class="hero-text">
+      <p class="eyebrow">Chef privé · Traiteur · Événementiel</p>
+      <h1>Cuisine sur mesure pour moments privés.</h1>
+      <p class="hero-description">
+        Lamine imagine des expériences culinaires à domicile, pour vos dîners,
+        brunchs, événements professionnels et moments à partager.
+      </p>
 
-    <div class="hero-filter"></div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn primary">Demander une prestation</a>
+        <a href="#services" class="btn secondary">Découvrir les services</a>
+      </div>
+    </div>
 
-    <div class="hero-content">
-      <p class="topline">PRIVATE CHEF & CATERING</p>
-      <h1>LAMINE</h1>
-      <p class="hero-bottom">DINNERS • EVENTS • FOOD EXPERIENCE</p>
+    <div class="hero-media">
+      <video class="background-video" autoplay muted loop playsinline preload="auto" poster="assets/photos/photo1.jpg">
+        <source src="assets/videos/hero.mp4" type="video/mp4" />
+      </video>
     </div>
   </section>
 
   <main>
-    <section id="about" class="about section">
-      <div class="section-title">
+    <section id="about" class="intro">
+      <div class="intro-label">
         <span>01</span>
-        <h2>ABOUT</h2>
+        <p>À propos</p>
       </div>
 
-      <div class="about-text">
+      <div class="intro-content">
+        <h2>Une cuisine généreuse, précise et adaptée à votre événement.</h2>
         <p>
-          Lamine imagine des expériences culinaires privées, pensées pour les
-          particuliers, les marques et les événements.
-        </p>
-
-        <p>
-          Une cuisine faite maison, généreuse et créative, construite sur mesure
-          selon vos envies, votre lieu et votre moment.
+          Chaque prestation est pensée comme une expérience complète : le menu,
+          le rythme du service, les produits, la présentation et l’ambiance sont
+          construits selon vos envies, votre lieu et le nombre d’invités.
         </p>
       </div>
     </section>
 
-    <section class="image-strip">
-      <img src="assets/photos/photo1.jpg" alt="Cuisine privée Lamine" />
-      <img src="assets/photos/photo2.jpg" alt="Traiteur événementiel Lamine" />
-      <img src="assets/photos/photo3.jpg" alt="Chef à domicile Lamine" />
-      <img src="assets/photos/photo4.jpg" alt="Food experience Lamine" />
+    <section class="featured-images">
+      <img src="assets/photos/photo1.jpg" alt="Plat préparé par Lamine" />
+      <img src="assets/photos/photo2.jpg" alt="Cuisine privée" />
+      <img src="assets/photos/photo3.jpg" alt="Table et événement" />
     </section>
 
-    <section id="services" class="place">
-      <div class="place-image">
-        <img src="assets/photos/photo5.jpg" alt="Service traiteur privé" />
+    <section id="services" class="services">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>Des formats adaptés à chaque moment.</h2>
       </div>
 
-      <div class="place-content">
-        <p class="small-title">PRIVATE CATERING</p>
-        <h2>Une cuisine sur mesure, directement chez vous.</h2>
-
-        <p>
-          Dîner privé, anniversaire, brunch, cocktail, buffet ou événement
-          professionnel : Lamine construit une proposition culinaire adaptée à
-          votre ambiance, votre budget et vos invités.
-        </p>
-
-        <div class="info">
+      <div class="service-grid">
+        <article class="service-card">
+          <span>01</span>
+          <h3>Dîner privé</h3>
           <p>
-            <strong>Formats</strong><br />
-            Dîner privé<br />
-            Buffet & cocktail<br />
-            Brunch & événement
+            Un menu personnalisé pour recevoir chez soi sans gérer la cuisine.
+            Idéal pour un anniversaire, une soirée entre amis ou un dîner intime.
           </p>
+        </article>
 
+        <article class="service-card">
+          <span>02</span>
+          <h3>Brunch & buffet</h3>
           <p>
-            <strong>Sur mesure</strong><br />
-            Menu personnalisé<br />
-            Produits de saison<br />
-            Prestation à domicile
+            Une proposition conviviale et généreuse pour les événements du
+            week-end, les groupes ou les moments plus décontractés.
           </p>
-        </div>
+        </article>
 
-        <div class="actions">
-          <a href="#experience" class="btn">SERVICES</a>
-          <a href="#contact" class="btn filled">REQUEST</a>
-        </div>
+        <article class="service-card">
+          <span>03</span>
+          <h3>Événement pro</h3>
+          <p>
+            Cocktail, lancement, repas d’équipe ou prestation pour une marque :
+            une cuisine claire, esthétique et adaptée au contexte.
+          </p>
+        </article>
       </div>
     </section>
 
-    <section id="experience" class="awards">
-      <div class="award">
-        <span>01</span>
-        <h3>CHEF À DOMICILE</h3>
+    <section id="formats" class="experience">
+      <div class="experience-image">
+        <img src="assets/photos/photo4.jpg" alt="Expérience culinaire" />
       </div>
 
-      <div class="award">
-        <span>02</span>
-        <h3>TRAITEUR PRIVÉ</h3>
-      </div>
+      <div class="experience-text">
+        <p class="eyebrow">Expérience</p>
+        <h2>Un service pensé autour de vos invités.</h2>
+        <p>
+          L’objectif est simple : proposer une cuisine qui a du goût, mais aussi
+          une vraie présence visuelle. Les plats sont pensés pour être bons,
+          beaux et adaptés au format de votre événement.
+        </p>
 
-      <div class="award">
-        <span>03</span>
-        <h3>ÉVÉNEMENT SUR MESURE</h3>
+        <ul>
+          <li>Menu personnalisé selon vos envies</li>
+          <li>Prestation à domicile ou sur lieu d’événement</li>
+          <li>Formats assis, buffet, cocktail ou brunch</li>
+          <li>Adaptation au nombre d’invités et au budget</li>
+        </ul>
       </div>
     </section>
 
-    <section class="full-video">
-      <video
-        class="background-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        poster="assets/photos/photo2.jpg"
-      >
+    <section class="video-section">
+      <video class="background-video" autoplay muted loop playsinline preload="auto" poster="assets/photos/photo5.jpg">
         <source src="assets/videos/ambiance.mp4" type="video/mp4" />
       </video>
 
-      <div>
-        <p>FOOD EXPERIENCE</p>
-        <h2>Un moment pensé autour du goût, du lieu et des invités.</h2>
+      <div class="video-overlay">
+        <p class="eyebrow">Food experience</p>
+        <h2>Recevoir, partager, profiter.</h2>
       </div>
     </section>
 
-    <section class="press">
-      <h2>OFFERS</h2>
-
-      <div class="press-list">
-        <article>
-          <span>01</span>
-          <h3>Dîner privé à domicile</h3>
-          <p>MENU SUR MESURE</p>
-        </article>
-
-        <article>
-          <span>02</span>
-          <h3>Buffet, brunch & cocktail</h3>
-          <p>FORMAT ADAPTÉ</p>
-        </article>
-
-        <article>
-          <span>03</span>
-          <h3>Événement marque ou entreprise</h3>
-          <p>FOOD DESIGN</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="gallery" class="gallery section">
-      <div class="section-title">
-        <span>02</span>
-        <h2>GALLERY</h2>
+    <section id="gallery" class="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Galerie</p>
+        <h2>Quelques réalisations.</h2>
       </div>
 
       <div class="gallery-grid">
-        <img src="assets/photos/photo1.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo2.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo3.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo4.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo5.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo6.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo7.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo8.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo9.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo10.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo11.jpg" alt="Galerie Lamine" />
-        <img src="assets/photos/photo12.jpg" alt="Galerie Lamine" />
+        <img src="assets/photos/photo1.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo2.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo3.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo4.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo5.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo6.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo7.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo8.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo9.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo10.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo11.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo12.jpg" alt="Réalisation culinaire Lamine" />
+        <img src="assets/photos/photo13.jpg" alt="Réalisation culinaire Lamine" />
       </div>
     </section>
 
     <section id="contact" class="contact">
-      <div>
-        <h2>BOOK YOUR EXPERIENCE</h2>
+      <div class="contact-text">
+        <p class="eyebrow">Contact</p>
+        <h2>Préparer votre événement.</h2>
         <p>
-          Pour un dîner privé, un événement, un brunch ou une prestation traiteur,
-          envoyez votre demande avec la date, le lieu, le nombre d’invités et le
-          type d’expérience souhaitée.
+          Envoyez une demande avec la date, le lieu, le nombre d’invités et le
+          type de prestation souhaitée. Lamine vous recontacte pour construire
+          une proposition adaptée.
         </p>
       </div>
 
-      <div class="contact-links">
-        <a href="tel:+33600000000">CALL</a>
-        <a href="https://www.instagram.com/laminekeslani/" target="_blank">INSTAGRAM</a>
-        <a href="mailto:contact@example.com">MAIL</a>
+      <div class="contact-card">
+        <a href="tel:+33600000000">Appeler</a>
+        <a href="https://www.instagram.com/laminekeslani/" target="_blank">Instagram</a>
+        <a href="mailto:contact@example.com">Envoyer un mail</a>
       </div>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Lamine</p>
-    <p>Private chef & catering</p>
+    <p>Chef privé & traiteur</p>
   </footer>
 
   <script src="script.js"></script>
